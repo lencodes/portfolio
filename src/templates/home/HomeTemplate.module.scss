@@ -33,4 +33,11 @@
   > *:not(:last-child) {
     margin-block-end: var(--size-xl);
   }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-md);
+    justify-content: center;
+  }
 }
