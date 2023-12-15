@@ -3,27 +3,27 @@ import styles from "./ProjectCard.module.scss";
 import { Tilt } from "react-tilt";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightAndDownLeftFromCenter } from "@fortawesome/free-solid-svg-icons";
-
-export type TProjectCard = {
-  title: string;
-  subtitle: string;
-  logoSrc: string;
-  backgroundImageSrc: string;
-};
+import { ProjectPortalTemplate } from "../../templates/templateParts/projectPortal/ProjectPortalTemplate";
+import { ProjectDetailsTemplate, TProject } from "../../templates/templateParts/projectDetails/ProjectDetailsTemplate";
 
 interface ProjectCardProps {
   layoutClassName?: string;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps & TProjectCard> = ({
-  title,
-  subtitle,
-  logoSrc,
-  backgroundImageSrc,
-}) => {
+export const ProjectCard: React.FC<ProjectCardProps & TProject> = ({ title, subtitle, logoSrc, cardImageSrc }) => {
+  const [portalOpen, setPortalOpen] = React.useState(false);
+  const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
+
+  const handleCardClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    setPortalOpen(!portalOpen);
+    setMousePosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const handleClosePortal = () => setPortalOpen(false);
+
   return (
     <Tilt className={styles.tilt} options={{ max: 10, perspective: 1000, scale: 1 }}>
-      <div className={styles.container} style={{ backgroundImage: `url(${backgroundImageSrc})` }}>
+      <div className={styles.container} onClick={handleCardClick} style={{ backgroundImage: `url(${cardImageSrc})` }}>
         <div className={styles.content}>
           <FontAwesomeIcon className={styles.expandIcon} icon={faUpRightAndDownLeftFromCenter} />
 
@@ -34,6 +34,12 @@ export const ProjectCard: React.FC<ProjectCardProps & TProjectCard> = ({
           </h3>
         </div>
       </div>
+
+      {portalOpen && (
+        <ProjectPortalTemplate>
+          <ProjectDetailsTemplate onClose={handleClosePortal} {...{ mousePosition }} />
+        </ProjectPortalTemplate>
+      )}
     </Tilt>
   );
 };

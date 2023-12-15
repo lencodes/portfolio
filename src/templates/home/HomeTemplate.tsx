@@ -14,6 +14,8 @@ export const HomeTemplate: React.FC = () => {
       <section>
         <RecentProjectsGridTemplate />
       </section>
+
+      <div id="portal-root" />
     </Container>
   );
 };
