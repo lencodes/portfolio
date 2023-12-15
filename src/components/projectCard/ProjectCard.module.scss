@@ -7,10 +7,27 @@
   border-radius: var(--size-sm);
   padding-inline: var(--size-lg);
   padding-block: var(--size-lg);
-  transition: all 200ms ease-in-out;
+  user-select: none;
+
+  * {
+    transition: all 200ms ease-in-out;
+  }
 
   .content {
     text-align: center;
+
+    .expandIcon {
+      border-radius: var(--size-xs);
+      padding: var(--size-sm);
+      background-color: var(--color-white);
+      position: absolute;
+      top: var(--size-sm);
+      right: var(--size-sm);
+
+      path {
+        fill: var(--color-black);
+      }
+    }
 
     .logo {
       width: 80%;
@@ -28,5 +45,9 @@
     filter: none;
     cursor: pointer;
     transform: scale(1.02);
+
+    .logo {
+      transform: scale(1.1);
+    }
   }
 }
