@@ -1,0 +1,32 @@
+.container {
+  overflow: hidden;
+  filter: grayscale(100%);
+  background-size: cover;
+  background-position: center center;
+  border: 1px var(--color-card-border) solid;
+  border-radius: var(--size-sm);
+  padding-inline: var(--size-lg);
+  padding-block: var(--size-lg);
+  transition: all 200ms ease-in-out;
+
+  .content {
+    text-align: center;
+
+    .logo {
+      width: 80%;
+      max-width: 125px;
+    }
+
+    .subtitle {
+      font-weight: 400;
+      display: block;
+      font-size: var(--font-size-md);
+    }
+  }
+
+  &:hover {
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}
