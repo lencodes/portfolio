@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  gap: var(--size-lg);
+  flex-direction: column;
+
+  h2 > .subtitle {
+    font-weight: 400;
+  }
+
+  .projects {
+    display: grid;
+    gap: var(--size-md);
+    grid-template-columns: 1fr 1fr;
+
+    justify-content: center;
+    align-items: center;
+  }
+}
