@@ -7,10 +7,11 @@ import { ProjectPortalTemplate } from "../../templates/templateParts/projectPort
 import { ProjectDetailsTemplate, TProject } from "../../templates/templateParts/projectDetails/ProjectDetailsTemplate";
 
 interface ProjectCardProps {
+  project: TProject;
   layoutClassName?: string;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps & TProject> = ({ title, subtitle, logoSrc, cardImageSrc }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [portalOpen, setPortalOpen] = React.useState(false);
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
 
@@ -23,21 +24,25 @@ export const ProjectCard: React.FC<ProjectCardProps & TProject> = ({ title, subt
 
   return (
     <Tilt className={styles.tilt} options={{ max: 10, perspective: 1000, scale: 1 }}>
-      <div className={styles.container} onClick={handleCardClick} style={{ backgroundImage: `url(${cardImageSrc})` }}>
+      <div
+        className={styles.container}
+        onClick={handleCardClick}
+        style={{ backgroundImage: `url(${project.cardImageSrc})` }}
+      >
         <div className={styles.content}>
           <FontAwesomeIcon className={styles.expandIcon} icon={faUpRightAndDownLeftFromCenter} />
 
-          <img className={styles.logo} src={logoSrc} alt={title} />
+          <img className={styles.logo} src={project.logoSrc} alt={project.title} />
 
           <h3>
-            {title} <span className={styles.subtitle}>{subtitle}</span>
+            {project.title} <span className={styles.subtitle}>{project.subtitle}</span>
           </h3>
         </div>
       </div>
 
       {portalOpen && (
         <ProjectPortalTemplate>
-          <ProjectDetailsTemplate onClose={handleClosePortal} {...{ mousePosition }} />
+          <ProjectDetailsTemplate onClose={handleClosePortal} {...{ mousePosition, project }} />
         </ProjectPortalTemplate>
       )}
     </Tilt>

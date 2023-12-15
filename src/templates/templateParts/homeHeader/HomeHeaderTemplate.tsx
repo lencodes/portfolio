@@ -23,7 +23,7 @@ export const HomeHeaderTemplate: React.FC = () => {
 
       <div className={styles.skills}>
         {skills.map((skill, idx) => (
-          <Skill key={`${skill.label}--${idx}`} {...skill} />
+          <Skill key={`${skill.label}-${idx}`} {...skill} />
         ))}
       </div>
     </div>

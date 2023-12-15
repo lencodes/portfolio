@@ -11,8 +11,8 @@ export const RecentProjectsGridTemplate: React.FC = () => {
       </h2>
 
       <div className={styles.projects}>
-        {recentProjects.map(({ title, subtitle, logoSrc, cardImageSrc }) => (
-          <ProjectCard key={`${title}-${logoSrc}`} {...{ title, subtitle, logoSrc, cardImageSrc }} />
+        {recentProjects.map((project) => (
+          <ProjectCard key={project.id} {...{ project }} />
         ))}
       </div>
     </div>
