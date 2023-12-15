@@ -4,8 +4,17 @@
 
   background-image: url("./resources/global-images/background.jpg");
   background-position: center center;
+  background-attachment: fixed;
 
   animation: animateBackground 5s infinite ease-in-out;
+}
+
+.content {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  position: absolute;
 }
 
 @keyframes animateBackground {

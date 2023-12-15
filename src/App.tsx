@@ -6,7 +6,9 @@ import { HomeTemplate } from "./templates/home/HomeTemplate";
 const App: React.FC = () => {
   return (
     <div className={styles.container}>
-      <HomeTemplate />
+      <section className={styles.content}>
+        <HomeTemplate />
+      </section>
     </div>
   );
 };
