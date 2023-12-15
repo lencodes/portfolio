@@ -1,0 +1,11 @@
+.container {
+  font-size: var(--font-size-sm);
+}
+
+.mastered {
+  font-weight: bold;
+
+  &::after {
+    content: " 🔥";
+  }
+}
