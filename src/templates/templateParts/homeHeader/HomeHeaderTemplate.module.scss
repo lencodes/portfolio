@@ -1,0 +1,40 @@
+.container {
+  --headshot-image-size: 125px;
+
+  text-align: center;
+
+  h1 {
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  h2 {
+    margin-block-start: var(--size-sm);
+
+    .subtitle {
+      display: block;
+      font-size: var(--font-size-md);
+      font-weight: 200;
+    }
+  }
+
+  .headshot {
+    img {
+      inline-size: var(--headshot-image-size);
+      block-size: var(--headshot-image-size);
+      border-radius: calc(var(--headshot-image-size) / 2);
+    }
+  }
+
+  > *:not(:last-child) {
+    margin-block-end: var(--size-xl);
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-md);
+    justify-content: center;
+  }
+}
