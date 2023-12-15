@@ -5,6 +5,11 @@
   color: var(--color-text-white);
   font-family: "Poppins", sans-serif;
 
+  b,
+  strong {
+    font-weight: 700;
+  }
+
   h1,
   h2,
   h3,
@@ -14,12 +19,12 @@
   }
 
   h1 {
-    font-size: 30px;
+    font-size: var(--font-size-xl);
     font-weight: lighter;
   }
 
   h2 {
-    font-size: 22px;
-    font-weight: 400;
+    font-size: var(--font-size-lg);
+    font-weight: lighter;
   }
 }
