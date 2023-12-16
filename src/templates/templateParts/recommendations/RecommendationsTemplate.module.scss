@@ -1,0 +1,21 @@
+.container {
+  & > *:not(:last-child) {
+    margin-block-end: var(--size-lg);
+  }
+
+  .recommendations {
+    display: flex;
+    gap: var(--size-md);
+    overflow-x: auto;
+    flex-wrap: nowrap;
+
+    & > * {
+      flex: 0 0 35%;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+  }
+}

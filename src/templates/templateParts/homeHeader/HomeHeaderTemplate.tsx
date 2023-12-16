@@ -6,7 +6,7 @@ import LENNART_BANK_PROFILE_PICTURE from "../../../resources/global-images/lenna
 
 export const HomeHeaderTemplate: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.headshot}>
         <img src={LENNART_BANK_PROFILE_PICTURE} alt="Lennart Bank" />
 
@@ -26,6 +26,6 @@ export const HomeHeaderTemplate: React.FC = () => {
           <Skill key={`${skill.label}-${idx}`} {...skill} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };

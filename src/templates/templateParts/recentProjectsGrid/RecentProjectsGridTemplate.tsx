@@ -5,7 +5,7 @@ import { recentProjects } from "../../../data/recentProjects";
 
 export const RecentProjectsGridTemplate: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h2>
         <strong>Most recent freelance projects</strong>, click to explore
       </h2>
@@ -15,6 +15,6 @@ export const RecentProjectsGridTemplate: React.FC = () => {
           <ProjectCard key={project.id} {...{ project }} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
