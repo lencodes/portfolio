@@ -12,7 +12,7 @@ export const RecommendationsTemplate: React.FC = () => {
 
       <div className={styles.recommendations}>
         {recommendations.map((recommendation) => (
-          <RecommendationCard {...{ recommendation }} />
+          <RecommendationCard key={recommendation.id} {...{ recommendation }} />
         ))}
       </div>
     </section>
