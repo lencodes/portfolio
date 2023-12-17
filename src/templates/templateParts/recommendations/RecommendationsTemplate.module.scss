@@ -12,10 +12,5 @@
     & > * {
       flex: 0 0 35%;
     }
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    scrollbar-width: none;
   }
 }
