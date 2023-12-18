@@ -4,6 +4,7 @@ import { Container } from "../../components/container/Container";
 import { HomeHeaderTemplate } from "../templateParts/homeHeader/HomeHeaderTemplate";
 import { RecentProjectsGridTemplate } from "../templateParts/recentProjectsGrid/RecentProjectsGridTemplate";
 import { RecommendationsTemplate } from "../templateParts/recommendations/RecommendationsTemplate";
+import { OlderProjectsTemplate } from "../templateParts/olderProjects/OlderProjectsTemplate";
 
 export const HomeTemplate: React.FC = () => {
   return (
@@ -13,6 +14,8 @@ export const HomeTemplate: React.FC = () => {
       <RecentProjectsGridTemplate />
 
       <RecommendationsTemplate />
+
+      <OlderProjectsTemplate />
 
       <div id="portal-root" />
     </Container>

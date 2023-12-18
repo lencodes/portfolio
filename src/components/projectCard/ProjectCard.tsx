@@ -5,13 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightAndDownLeftFromCenter } from "@fortawesome/free-solid-svg-icons";
 import { ProjectPortalTemplate } from "../../templates/templateParts/projectPortal/ProjectPortalTemplate";
 import { ProjectDetailsTemplate, TProject } from "../../templates/templateParts/projectDetails/ProjectDetailsTemplate";
+import clsx from "clsx";
 
 interface ProjectCardProps {
   project: TProject;
   layoutClassName?: string;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project, layoutClassName }) => {
   const [portalOpen, setPortalOpen] = React.useState(false);
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
 
@@ -25,7 +26,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <Tilt className={styles.tilt} options={{ max: 10, perspective: 1000, scale: 1 }}>
       <div
-        className={styles.container}
+        className={clsx(styles.container, layoutClassName)}
         onClick={handleCardClick}
         style={{ backgroundImage: `url(${project.cardImageSrc})` }}
       >
