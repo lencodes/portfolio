@@ -5,6 +5,7 @@ import { HomeHeaderTemplate } from "../templateParts/homeHeader/HomeHeaderTempla
 import { RecentProjectsGridTemplate } from "../templateParts/recentProjectsGrid/RecentProjectsGridTemplate";
 import { RecommendationsTemplate } from "../templateParts/recommendations/RecommendationsTemplate";
 import { OlderProjectsTemplate } from "../templateParts/olderProjects/OlderProjectsTemplate";
+import { Tooltip } from "react-tooltip";
 
 export const HomeTemplate: React.FC = () => {
   return (
@@ -18,6 +19,8 @@ export const HomeTemplate: React.FC = () => {
       <OlderProjectsTemplate />
 
       <div id="portal-root" />
+
+      <Tooltip id="tooltip" />
     </Container>
   );
 };

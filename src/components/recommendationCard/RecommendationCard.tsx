@@ -27,7 +27,14 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
   return (
     <CardWrapper {...{ layoutClassName }}>
       <div className={styles.container}>
-        {isTranslated && <FontAwesomeIcon className={styles.translatedIcon} icon={faLanguage} />}
+        {isTranslated && (
+          <FontAwesomeIcon
+            data-tooltip-id="tooltip"
+            data-tooltip-content="Translated using Google Translate."
+            className={styles.translatedIcon}
+            icon={faLanguage}
+          />
+        )}
 
         <div className={styles.header}>
           <img src={profilePhotoSrc} alt={name} />
