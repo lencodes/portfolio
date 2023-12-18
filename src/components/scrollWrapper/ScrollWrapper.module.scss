@@ -6,15 +6,36 @@
     position: relative;
 
     padding-block: var(--size-sm);
-    padding-inline: var(--size-sm);
-
-    left: calc(var(--size-sm) * -1);
-    width: calc(100% - var(--size-sm));
   }
 
   &::-webkit-scrollbar {
     display: none;
   }
-
   scrollbar-width: none;
+}
+
+.navigationContainer {
+  display: flex;
+  margin-block-start: var(--size-sm);
+
+  button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: var(--size-sm);
+
+    svg {
+      height: var(--icon-size);
+    }
+
+    &:hover {
+      cursor: pointer;
+      user-select: none;
+      text-decoration: underline;
+    }
+
+    &.right {
+      margin-inline-start: auto;
+    }
+  }
 }
