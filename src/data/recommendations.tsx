@@ -34,4 +34,12 @@ export const recommendations: TRecommendation[] = [
     review:
       "I worked with Lennart for two years at Conduction. In his role as a senior front-end developer, Lennart has taken our React codebases to the next level with his in-depth knowledge and experience by adding more structure. Lennart is not only an expert in his field, but also a colleague with whom it is a pleasure to work. His clear communication and positive contribution have significantly strengthened the team. I am confident that Lennart will be a valuable asset wherever he goes.",
   },
+  {
+    id: "ad86fc91-d962-443d-ba88-99fc6684497a",
+    name: "Remko Huisman",
+    role: "Developer at Conduction",
+    profilePhotoSrc: "/images/recommendations/review-remko-huisman.jpg",
+    review:
+      "I worked closely with Lennart for two years. During that time he was able to teach me a lot about React. When it comes to React, Lennart is highly recommended. Thanks to his help, our own React codebases are well structured. This way, future juniors can also properly maintain and understand the databases. Lennart is a great teacher, he takes you as a person into account, improves your self-confidence and always finds a way to convey information well and logically. Thanks to his wealth of knowledge, fun and patient character, he knows how to give others self-confidence and provide them with the necessary knowledge. Lennart is a nice, smart and wonderful man and will be a great asset wherever he works.",
+  },
 ];

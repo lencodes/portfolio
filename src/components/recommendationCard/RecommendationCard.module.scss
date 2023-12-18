@@ -12,6 +12,7 @@
     }
 
     > img {
+      height: 50px;
       border-radius: 50%;
     }
   }
@@ -20,5 +21,13 @@
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 14;
+    -webkit-box-orient: vertical;
   }
 }
