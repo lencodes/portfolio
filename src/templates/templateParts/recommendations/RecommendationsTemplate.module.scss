@@ -6,7 +6,6 @@
   .recommendations {
     display: flex;
     gap: var(--size-md);
-    overflow-x: auto;
     flex-wrap: nowrap;
 
     & > * {

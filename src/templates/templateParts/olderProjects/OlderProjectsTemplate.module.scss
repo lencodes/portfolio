@@ -7,12 +7,6 @@
     display: flex;
     position: relative;
     gap: var(--size-md);
-    overflow-x: auto;
-    padding-block: var(--size-sm);
-    padding-inline: var(--size-sm);
-
-    left: calc(var(--size-sm) * -1);
-    width: calc(100% - var(--size-sm));
 
     .project {
       width: 200px;
