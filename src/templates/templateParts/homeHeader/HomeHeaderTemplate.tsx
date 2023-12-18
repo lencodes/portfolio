@@ -2,13 +2,12 @@ import React from "react";
 import styles from "./HomeHeaderTemplate.module.scss";
 import { Skill } from "../../../components/skill/Skill";
 import { skills } from "../../../data/skills";
-import LENNART_BANK_PROFILE_PICTURE from "../../../resources/global-images/lennart-bank-profile-picture.jpg";
 
 export const HomeHeaderTemplate: React.FC = () => {
   return (
     <section className={styles.container}>
       <div className={styles.headshot}>
-        <img src={LENNART_BANK_PROFILE_PICTURE} alt="Lennart Bank" />
+        <img src="/images/global/lennart-bank-profile-picture.jpg" alt="Lennart Bank" />
 
         <h2>
           Lennart Bank, B.Sc.

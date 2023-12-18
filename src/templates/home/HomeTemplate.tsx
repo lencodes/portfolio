@@ -6,6 +6,7 @@ import { RecentProjectsGridTemplate } from "../templateParts/recentProjectsGrid/
 import { RecommendationsTemplate } from "../templateParts/recommendations/RecommendationsTemplate";
 import { OlderProjectsTemplate } from "../templateParts/olderProjects/OlderProjectsTemplate";
 import { Tooltip } from "react-tooltip";
+import { LinksTemplate } from "../templateParts/links/LinksTemplate";
 
 export const HomeTemplate: React.FC = () => {
   return (
@@ -17,6 +18,8 @@ export const HomeTemplate: React.FC = () => {
       <RecommendationsTemplate />
 
       <OlderProjectsTemplate />
+
+      <LinksTemplate />
 
       <div id="portal-root" />
 

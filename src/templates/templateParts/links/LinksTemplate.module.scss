@@ -1,0 +1,14 @@
+.container {
+  & > *:not(:last-child) {
+    margin-block-end: var(--size-lg);
+  }
+
+  .linksContainer {
+    display: flex;
+    gap: var(--size-md);
+
+    & > * {
+      flex: 1;
+    }
+  }
+}
