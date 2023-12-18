@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="30px" viewBox="0 0 20 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>figma-svgrepo-com</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-891.000000, -838.000000)">
+            <g id="skills" transform="translate(490.000000, 545.000000)">
+                <g id="languages" transform="translate(320.000000, 212.000000)">
+                    <g id="figma-svgrepo-com" transform="translate(81.000000, 81.000000)">
+                        <path d="M10,15 C10,12.238625 12.238625,10 15,10 C17.761375,10 20,12.238625 20,15 C20,17.761375 17.761375,20 15,20 C12.238625,20 10,17.761375 10,15 Z" id="Path" fill="#1ABCFE"></path>
+                        <path d="M0,25 C0,22.238625 2.238575,20 5,20 L10,20 L10,25 C10,27.761375 7.761375,30 5,30 C2.238575,30 0,27.761375 0,25 Z" id="Path" fill="#0ACF83"></path>
+                        <path d="M10,0 L10,10 L15,10 C17.761375,10 20,7.761375 20,5 C20,2.238575 17.761375,0 15,0 L10,0 Z" id="Path" fill="#FF7262"></path>
+                        <path d="M0,5 C0,7.761375 2.238575,10 5,10 L10,10 L10,0 L5,0 C2.238575,0 0,2.238575 0,5 Z" id="Path" fill="#F24E1E"></path>
+                        <path d="M0,15 C0,17.761375 2.238575,20 5,20 L10,20 L10,10 L5,10 C2.238575,10 0,12.238625 0,15 Z" id="Path" fill="#A259FF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

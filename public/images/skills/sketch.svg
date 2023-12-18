@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="25.7143929px" viewBox="0 0 30 25.7143929" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>sketch-svgrepo-com(1)</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-832.000000, -838.000000)">
+            <g id="skills" transform="translate(490.000000, 545.000000)">
+                <g id="languages" transform="translate(320.000000, 212.000000)">
+                    <g id="sketch-svgrepo-com(1)" transform="translate(22.000000, 81.000000)">
+                        <polygon id="Path" fill="#FDB300" points="6.54544286 0.846621429 15 0 23.4545357 0.846621429 29.9998929 9.16928571 15 25.7141786 0 9.16928571"></polygon>
+                        <path d="M6.075675,9.16939286 L14.9998929,25.7143929 L0,9.16939286 L6.075675,9.16939286 Z M23.9243571,9.16939286 L15.0001071,25.7143929 L30,9.16939286" id="Shape" fill="#EA6C00" fill-rule="nonzero"></path>
+                        <polyline id="Path" fill="#FDAD00" points="6.07596429 9.16939286 23.9243571 9.16939286 15.0002143 25.7143929"></polyline>
+                        <path d="M15.0002143,6.09036631e-16 L6.54565714,0.846471429 L6.07596429,9.16917857 L15.0002143,6.09036631e-16 Z M15.0003214,6.09036631e-16 L23.4548571,0.846471429 L23.9245714,9.16917857" id="Shape" fill="#FDD231" fill-rule="nonzero"></path>
+                        <path d="M30,9.16917857 L23.4546429,0.846471429 L23.9243571,9.16917857 L30,9.16917857 Z M0,9.16917857 L6.54536786,0.846471429 L6.075675,9.16917857" id="Shape" fill="#FDAD00" fill-rule="nonzero"></path>
+                        <polyline id="Path" fill="#FEEEB7" points="15.0002143 6.09036631e-16 6.07596429 9.16917857 23.9243571 9.16917857"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

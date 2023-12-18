@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="26.25px" viewBox="0 0 30 26.25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>teams-svgrepo-com</title>
+    <defs>
+        <linearGradient x1="6.8877551%" y1="5.26285714%" x2="94.1675%" y2="66.6821429%" id="linearGradient-1">
+            <stop stop-color="#364088" offset="0%"></stop>
+            <stop stop-color="#6E7EE1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="44.2305263%" x2="100%" y2="44.2305263%" id="linearGradient-2">
+            <stop stop-color="#515FC4" offset="0%"></stop>
+            <stop stop-color="#7084EA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="5.26316667%" x2="96.605%" y2="73.2448333%" id="linearGradient-3">
+            <stop stop-color="#364088" offset="0%"></stop>
+            <stop stop-color="#6E7EE1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="14.28625%" y1="14.28575%" x2="78.57125%" y2="89.28575%" id="linearGradient-4">
+            <stop stop-color="#4858AE" offset="0%"></stop>
+            <stop stop-color="#4E60CE" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4.6875,9.375 C7.27640625,9.375 9.375,7.27637812 9.375,4.6875 C9.375,2.09862188 7.27640625,0 4.6875,0 C2.09859375,0 0,2.09862188 0,4.6875 C0,7.27637812 2.09859375,9.375 4.6875,9.375 Z" id="path-5"></path>
+        <path d="M-1.6633125,10.3125 C-2.29797187,10.3125 -2.8125,10.827 -2.8125,11.4616875 L-2.8125,20.625 C-2.8125,24.7671562 0.54534375,28.125 4.6875,28.125 C8.82965625,28.125 12.1875,24.7671562 12.1875,20.625 L12.1875,11.4616875 C12.1875,10.827 11.673,10.3125 11.0383125,10.3125 L-1.6633125,10.3125 Z" id="path-7"></path>
+        <linearGradient x1="-2.89743889e-07%" y1="50%" x2="100%" y2="50%" id="linearGradient-9">
+            <stop stop-color="#2A3887" offset="0%"></stop>
+            <stop stop-color="#4C56B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-1314.000000, -673.875000)">
+            <g id="skills" transform="translate(490.000000, 545.000000)">
+                <g transform="translate(640.000000, 48.000000)" id="languages">
+                    <g id="teams-svgrepo-com" transform="translate(184.000000, 79.000000)">
+                        <path d="M17.8125,13.03425 C17.8125,12.566625 18.191625,12.1875 18.65925,12.1875 L29.15325,12.1875 C29.620875,12.1875 30,12.566625 30,13.03425 L30,19.21875 C30,22.5842813 27.2717813,25.3125 23.90625,25.3125 C20.5407187,25.3125 17.8125,22.5842813 17.8125,19.21875 L17.8125,13.03425 Z" id="Path" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                        <path d="M8.4375,11.4616875 C8.4375,10.827 8.95200937,10.3125 9.5866875,10.3125 L22.2883125,10.3125 C22.923,10.3125 23.4375,10.827 23.4375,11.4616875 L23.4375,20.625 C23.4375,24.7671562 20.0796562,28.125 15.9375,28.125 C11.7953438,28.125 8.4375,24.7671562 8.4375,20.625 L8.4375,11.4616875 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                        <circle id="Oval" fill="#34439E" fill-rule="nonzero" cx="25.3125" cy="7.5" r="2.8125"></circle>
+                        <circle id="Oval" fill="url(#linearGradient-3)" fill-rule="nonzero" cx="25.3125" cy="7.5" r="2.8125"></circle>
+                        <circle id="Oval" fill="url(#linearGradient-4)" fill-rule="nonzero" cx="16.875" cy="5.625" r="3.75"></circle>
+                        <g id="Clipped" transform="translate(11.250000, 0.000000)">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <g id="Path"></g>
+                            <path d="M-4.6875,11.25 C-4.6875,9.69665625 -3.42829688,8.4375 -1.875,8.4375 L4.6875,8.4375 C6.24084375,8.4375 7.5,9.69665625 7.5,11.25 L7.5,22.5 C7.5,24.0533437 6.24084375,25.3125 4.6875,25.3125 L-4.6875,25.3125 L-4.6875,11.25 Z" id="Path" fill-opacity="0.3" fill="#000000" fill-rule="nonzero" mask="url(#mask-6)"></path>
+                            <mask id="mask-8" fill="white">
+                                <use xlink:href="#path-7"></use>
+                            </mask>
+                            <g id="Path"></g>
+                        </g>
+                        <rect id="Rectangle" fill="url(#linearGradient-9)" fill-rule="nonzero" x="0" y="6.5625" width="16.875" height="16.875" rx="8.4375"></rect>
+                        <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="12.1875 10.3125 4.6875 10.3125 4.6875 12.0325312 7.49525625 12.0325312 7.49525625 19.6875 9.37978125 19.6875 9.37978125 12.0325312 12.1875 12.0325312"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

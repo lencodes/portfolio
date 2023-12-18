@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>jira-svgrepo-com</title>
+    <defs>
+        <linearGradient x1="98.0308675%" y1="0.160599572%" x2="58.8877062%" y2="40.7655246%" id="linearGradient-1">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100.665247%" y1="0.45503212%" x2="55.4018095%" y2="44.7269807%" id="linearGradient-2">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-1260.000000, -672.000000)" fill-rule="nonzero">
+            <g id="skills" transform="translate(490.000000, 545.000000)">
+                <g transform="translate(640.000000, 48.000000)" id="languages">
+                    <g id="jira-svgrepo-com" transform="translate(130.000000, 79.000000)">
+                        <path d="M28.7466927,0 L14.3002368,0 C14.3002368,1.72957642 14.9873083,3.38831389 16.2103035,4.6113091 C17.4332987,5.83430431 19.0920362,6.52137586 20.8216126,6.52137586 L23.4828019,6.52137586 L23.4828019,9.09065591 C23.4851064,12.6890501 26.4016059,15.6055497 30,15.6078541 L30,1.25330734 C30,0.56112481 29.4388752,0 28.7466927,0 Z" id="Path" fill="#2684FF"></path>
+                        <path d="M21.5986632,7.19816183 L7.15220722,7.19816183 C7.15451167,10.796556 10.0710112,13.7130555 13.6694054,13.71536 L16.3305947,13.71536 L16.3305947,16.2929955 C16.3352051,19.8913884 19.2535745,22.8060159 22.8519705,22.8060159 L22.8519705,8.45146917 C22.8519705,7.75928664 22.2908458,7.19816183 21.5986632,7.19816183 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                        <path d="M14.4464559,14.392146 L0,14.392146 C0,17.9938024 2.91971943,20.9135218 6.52137586,20.9135218 L9.1909205,20.9135218 L9.1909205,23.4828019 C9.19321696,27.0779385 12.1046324,29.9930915 15.6997633,30 L15.6997633,15.6454534 C15.6997633,14.9532707 15.1386384,14.392146 14.4464559,14.392146 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
