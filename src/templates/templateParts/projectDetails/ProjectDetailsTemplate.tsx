@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { SkillsList } from "../../../components/skillsList/SkillsList";
 import { TSkillLabel } from "../../../data/skills";
+import { RecommendationCard, TRecommendation } from "../../../components/recommendationCard/RecommendationCard";
 
 export type TProject = {
   id: string;
@@ -26,6 +27,7 @@ export type TProject = {
     title: JSX.Element;
     headerImageSrc: string;
     skills: Array<TSkillLabel>;
+    recommendation?: TRecommendation;
   };
 };
 
@@ -114,19 +116,21 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
 
         <animated.section style={useSpring({ ...bounceUpSpring, delay: 1250 })}>
           <div className={styles.content}>
-            <div className={styles.responsibilitiesAndTechnologies}>
-              <div>
-                <h2>
-                  <strong>Key responsibilities</strong>, on a daily basis
-                </h2>
-              </div>
-            </div>
-
-            <div className={styles.recommendations}>
+            <div>
               <h2>
-                <strong>Recommendations</strong>
+                <strong>Key responsibilities</strong>, on a daily basis
               </h2>
             </div>
+
+            {project.details.recommendation && (
+              <div>
+                <h2>
+                  <strong>Recommendation</strong>
+                </h2>
+
+                <RecommendationCard recommendation={project.details.recommendation} />
+              </div>
+            )}
           </div>
         </animated.section>
 

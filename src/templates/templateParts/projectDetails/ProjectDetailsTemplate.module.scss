@@ -108,19 +108,12 @@
   .content {
     display: grid;
     gap: var(--size-xl);
-    grid-template-columns: 2fr 1fr;
-  }
-
-  .responsibilitiesAndTechnologies {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-xl);
+    grid-template-columns: 1.5fr 1fr;
 
     > * {
       display: flex;
+      gap: var(--size-lg);
       flex-direction: column;
-      gap: var(--size-md);
     }
   }
 }

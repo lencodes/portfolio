@@ -1,4 +1,5 @@
 import { TProject } from "../templates/templateParts/projectDetails/ProjectDetailsTemplate";
+import { recommendations } from "./recommendations";
 
 export const recentProjects: TProject[] = [
   {
@@ -40,6 +41,9 @@ export const recentProjects: TProject[] = [
         "JSON",
         "ElasticSearch",
       ],
+      recommendation: recommendations.find(
+        (recommendation) => recommendation.id === "0d134cf6-64ab-4516-b489-9a800d70f9ce",
+      ),
     },
   },
   {
@@ -76,6 +80,9 @@ export const recentProjects: TProject[] = [
         "ElasticSearch",
         "MySQL",
       ],
+      recommendation: recommendations.find(
+        (recommendation) => recommendation.id === "b4a61897-14c1-42fe-b697-2a51c62e0848",
+      ),
     },
   },
   {
