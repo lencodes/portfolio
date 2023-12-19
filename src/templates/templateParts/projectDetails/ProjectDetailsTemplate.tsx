@@ -10,6 +10,7 @@ import {
   faSquareArrowUpRight,
   faSquareXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import { ScrollWrapper } from "../../../components/scrollWrapper/ScrollWrapper";
 
 export type TProject = {
   id: string;
@@ -17,10 +18,13 @@ export type TProject = {
   subtitle: string;
   logoSrc: string;
   cardImageSrc: string;
-  headerImageSrc: string;
   duration: string;
   location: string;
   years: string;
+  details: {
+    title: JSX.Element;
+    headerImageSrc: string;
+  };
 };
 
 interface ProjectDetailsTemplateProps {
@@ -71,7 +75,10 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
 
         <animated.section
           className={styles.headerContainer}
-          style={{ ...useSpring({ ...bounceInSpring, delay: 700 }), backgroundImage: `url(${project.headerImageSrc})` }}
+          style={{
+            ...useSpring({ ...bounceInSpring, delay: 700 }),
+            backgroundImage: `url(${project.details.headerImageSrc})`,
+          }}
         >
           <animated.div style={useSpring({ ...bounceUpSpring, delay: 750 })} className={styles.headerContent}>
             <img src={project.logoSrc} alt={project.title} />
@@ -100,10 +107,7 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
         </animated.section>
 
         <animated.section style={useSpring({ ...bounceUpSpring, delay: 1250 })}>
-          <h1>
-            In collaboration with Kaliber Interactive, I worked on the complete redesign of{" "}
-            <strong>Bol.com's recruitment platform</strong>.
-          </h1>
+          <h1>{project.details.title}</h1>
         </animated.section>
 
         <animated.section style={useSpring({ ...bounceUpSpring, delay: 1250 })}>
