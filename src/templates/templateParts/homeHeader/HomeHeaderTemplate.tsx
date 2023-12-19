@@ -24,7 +24,7 @@ export const HomeHeaderTemplate: React.FC = () => {
       <ScrollWrapper>
         <div className={styles.skillsContainer}>
           {skills.map((skill, idx) => (
-            <Skill key={idx} {...{ skill }} />
+            <Skill key={idx} {...{ skill, idx }} />
           ))}
         </div>
       </ScrollWrapper>

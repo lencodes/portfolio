@@ -24,7 +24,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, layoutClassNa
   const handleClosePortal = () => setPortalOpen(false);
 
   return (
-    <Tilt className={styles.tilt} options={{ max: 10, perspective: 1000, scale: 1 }}>
+    <Tilt options={{ max: 10, perspective: 1000, scale: 1 }}>
       <div
         className={clsx(styles.container, layoutClassName)}
         onClick={handleCardClick}
