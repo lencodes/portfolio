@@ -1,8 +1,6 @@
 .container {
   --headshot-image-size: 125px;
 
-  text-align: center;
-
   h1 {
     strong {
       font-weight: 700;
@@ -21,6 +19,8 @@
   }
 
   .headshot {
+    text-align: center;
+
     img {
       inline-size: var(--headshot-image-size);
       block-size: var(--headshot-image-size);
@@ -32,10 +32,8 @@
     margin-block-end: var(--size-xl);
   }
 
-  .skills {
+  .skillsContainer {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--size-md);
-    justify-content: center;
+    gap: var(--size-lg);
   }
 }

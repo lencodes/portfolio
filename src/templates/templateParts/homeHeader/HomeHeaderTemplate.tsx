@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./HomeHeaderTemplate.module.scss";
-import { Skill } from "../../../components/skill/Skill";
 import { skills } from "../../../data/skills";
+import { Skill } from "../../../components/skill/Skill";
+import { ScrollWrapper } from "../../../components/scrollWrapper/ScrollWrapper";
 
 export const HomeHeaderTemplate: React.FC = () => {
   return (
@@ -20,11 +21,13 @@ export const HomeHeaderTemplate: React.FC = () => {
         solutions using React and TypeScript.
       </h1>
 
-      <div className={styles.skills}>
-        {skills.map((skill, idx) => (
-          <Skill key={`${skill.label}-${idx}`} {...skill} />
-        ))}
-      </div>
+      <ScrollWrapper>
+        <div className={styles.skillsContainer}>
+          {skills.map((skill, idx) => (
+            <Skill key={idx} {...{ skill }} />
+          ))}
+        </div>
+      </ScrollWrapper>
     </section>
   );
 };
