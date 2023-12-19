@@ -22,7 +22,7 @@ export const HomeTemplate: React.FC = () => {
         <HomeHeaderTemplate />
       </animated.div>
 
-      <animated.div style={useSpring({ ...bounceUpSpring, delay: 500 })}>
+      <animated.div style={useSpring({ ...bounceUpSpring, delay: 1000 })}>
         <RecentProjectsGridTemplate />
       </animated.div>
 
@@ -34,7 +34,7 @@ export const HomeTemplate: React.FC = () => {
 
       <div id="portal-root" />
 
-      <Tooltip id="tooltip" />
+      <Tooltip style={{ maxWidth: "300px", textAlign: "center" }} id="tooltip" />
     </Container>
   );
 };
