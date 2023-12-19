@@ -1,21 +1,26 @@
 import React from "react";
 import styles from "./Skill.module.scss";
-import { CardWrapper } from "../cardWrapper/CardWrapper";
 import clsx from "clsx";
 
 export type TSkill = {
+  iconSrc: string;
   label: string;
-  mastered?: boolean; // handles 🔥
+  highlighted?: boolean;
 };
 
 interface SkillProps {
+  skill: TSkill;
   layoutClassName?: string;
 }
 
-export const Skill: React.FC<SkillProps & TSkill> = ({ label, mastered, layoutClassName }) => {
+export const Skill: React.FC<SkillProps> = ({ skill: { iconSrc, label, highlighted }, layoutClassName }) => {
   return (
-    <CardWrapper size="sm" {...{ layoutClassName }}>
-      <span className={clsx(styles.container, mastered && styles.mastered)}>{label}</span>
-    </CardWrapper>
+    <div className={clsx(styles.container, layoutClassName)}>
+      <div className={styles.imageContainer}>
+        <img src={iconSrc} alt={label} />
+      </div>
+
+      <span className={clsx(styles.label, [highlighted && styles.highlighted])}>{label}</span>
+    </div>
   );
 };
