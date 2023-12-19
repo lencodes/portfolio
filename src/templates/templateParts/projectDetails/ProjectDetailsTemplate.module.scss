@@ -107,7 +107,7 @@
 
   .content {
     display: grid;
-    gap: var(--size-xl);
+    gap: var(--size-lg);
     grid-template-columns: 1.5fr 1fr;
 
     > * {
@@ -115,5 +115,11 @@
       gap: var(--size-lg);
       flex-direction: column;
     }
+  }
+
+  .technologiesContainer {
+    display: flex;
+    gap: var(--size-lg);
+    flex-direction: column;
   }
 }

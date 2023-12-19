@@ -134,7 +134,14 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
           </div>
         </animated.section>
 
-        <animated.section style={useSpring({ ...bounceUpSpring, delay: 1500 })}>
+        <animated.section
+          className={styles.technologiesContainer}
+          style={useSpring({ ...bounceUpSpring, delay: 1500 })}
+        >
+          <h2>
+            <strong>Technologies and applications</strong>, used during this project
+          </h2>
+
           <SkillsList skills={project.details.skills} />
         </animated.section>
       </Container>
