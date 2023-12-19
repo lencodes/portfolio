@@ -44,6 +44,24 @@ export const recentProjects: TProject[] = [
       recommendation: recommendations.find(
         (recommendation) => recommendation.id === "0d134cf6-64ab-4516-b489-9a800d70f9ce",
       ),
+      responsibilities: [
+        <>Lead frontend developer in a multidisciplinair team</>,
+        <>
+          React (function components, custom hooks, react-query and more), Typescript, HTML5, CSS Modules, REST API’s
+          and much more
+        </>,
+        <>Coaching frontend developers and reviewing their code on a daily basis</>,
+        <>Code management using Git</>,
+        <>CI/CD management using GitHub Workflows (automatic deployment, build tests and governance)</>,
+        <>
+          Implementing, building and managing (custom) component libraries and implementing NL Design System within
+          them.
+        </>,
+        <>
+          Municipalities (and clients) worked for and with: Rotterdam, Utrecht, Noordwijk, Tubbergen, Leiden, Epe,
+          Common Ground, Noaberkracht, and more
+        </>,
+      ],
     },
   },
   {
@@ -83,6 +101,15 @@ export const recentProjects: TProject[] = [
       recommendation: recommendations.find(
         (recommendation) => recommendation.id === "b4a61897-14c1-42fe-b697-2a51c62e0848",
       ),
+      responsibilities: [
+        <>Frontend development in a multidisciplinair team</>,
+        <>Daily SCRUM-meetings with all stakeholders, including daily sessions with the UI & UX team</>,
+        <>
+          Building (micro-) animations within reusable components, using CSS Animations, Transitions and React Spring
+        </>,
+        <>Creating ready-to-use WordPress (ACF) components, with a React frontend</>,
+        <>Code management and pull requests using GitHub</>,
+      ],
     },
   },
   {
@@ -118,6 +145,15 @@ export const recentProjects: TProject[] = [
         "JSON",
         "NodeJS",
         "ElasticSearch",
+      ],
+      responsibilities: [
+        <>Frontend development in a multidisciplinair team (in collaboration with Q42 and Morrow)</>,
+        <>Creating a web application to manage their back office system, form handling using React Hook Form</>,
+        <>Allowing all REST requests to be client-side cached using React Query</>,
+        <>
+          Building (micro-) animations within reusable components, using CSS Animations, Transitions and React Spring
+        </>,
+        <>Code management and pull requests using GitHub</>,
       ],
     },
   },
@@ -155,6 +191,16 @@ export const recentProjects: TProject[] = [
         "Agile",
         "JSON",
         "MySQL",
+      ],
+      responsibilities: [
+        <>Lead Frontend Development for this web application</>,
+        <>Allowing all REST requests to be client-side cached using React Query</>,
+        <>Code management and pull requests using GitHub</>,
+        <>Managing all content (backend) with WordPress, handling the frontend with React</>,
+        <>
+          Building (micro-) animations within reusable components, using CSS Animations, Transitions and React Spring
+        </>,
+        <>CI/CD management using GitHub Workflows (automatic deployment, build tests and governance)</>,
       ],
     },
   },

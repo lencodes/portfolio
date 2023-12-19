@@ -27,6 +27,7 @@ export type TProject = {
     title: JSX.Element;
     headerImageSrc: string;
     skills: Array<TSkillLabel>;
+    responsibilities: Array<JSX.Element>;
     recommendation?: TRecommendation;
   };
 };
@@ -68,7 +69,7 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
         style={{ top: `${mousePosition.y - 50}px`, left: `${mousePosition.x - 50}px` }}
       />
       <Container layoutClassName={styles.container}>
-        <animated.div className={styles.topBar} style={useSpring({ ...bounceUpSpring, delay: 3000 })}>
+        <animated.div className={styles.topBar} style={useSpring({ ...bounceUpSpring, delay: 2000 })}>
           <button onClick={onClose}>
             <FontAwesomeIcon icon={faSquareXmark} /> Close window
           </button>
@@ -120,6 +121,12 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
               <h2>
                 <strong>Key responsibilities</strong>, on a daily basis
               </h2>
+
+              <ul className={styles.responsibilities}>
+                {project.details.responsibilities.map((responsibility, idx) => (
+                  <li key={idx}>{responsibility}</li>
+                ))}
+              </ul>
             </div>
 
             {project.details.recommendation && (

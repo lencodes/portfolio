@@ -117,6 +117,16 @@
     }
   }
 
+  .responsibilities {
+    margin: 0;
+    padding-inline-start: 14px;
+
+    & > *:not(:last-child) {
+      margin-block-end: var(--size-sm);
+      line-height: 1.8;
+    }
+  }
+
   .technologiesContainer {
     display: flex;
     gap: var(--size-lg);
