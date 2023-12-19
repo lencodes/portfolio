@@ -10,7 +10,8 @@ import {
   faSquareArrowUpRight,
   faSquareXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import { ScrollWrapper } from "../../../components/scrollWrapper/ScrollWrapper";
+import { SkillsList } from "../../../components/skillsList/SkillsList";
+import { TSkillLabel } from "../../../data/skills";
 
 export type TProject = {
   id: string;
@@ -24,6 +25,7 @@ export type TProject = {
   details: {
     title: JSX.Element;
     headerImageSrc: string;
+    skills: Array<TSkillLabel>;
   };
 };
 
@@ -118,12 +120,6 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
                   <strong>Key responsibilities</strong>, on a daily basis
                 </h2>
               </div>
-
-              <div>
-                <h2>
-                  <strong>Key technologies</strong>, implemented
-                </h2>
-              </div>
             </div>
 
             <div className={styles.recommendations}>
@@ -132,6 +128,10 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
               </h2>
             </div>
           </div>
+        </animated.section>
+
+        <animated.section style={useSpring({ ...bounceUpSpring, delay: 1500 })}>
+          <SkillsList skills={project.details.skills} />
         </animated.section>
       </Container>
     </div>

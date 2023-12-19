@@ -31,9 +31,4 @@
   > *:not(:last-child) {
     margin-block-end: var(--size-xl);
   }
-
-  .skillsContainer {
-    display: flex;
-    gap: var(--size-lg);
-  }
 }

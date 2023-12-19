@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./HomeHeaderTemplate.module.scss";
-import { skills } from "../../../data/skills";
-import { Skill } from "../../../components/skill/Skill";
-import { ScrollWrapper } from "../../../components/scrollWrapper/ScrollWrapper";
+import { SkillsList } from "../../../components/skillsList/SkillsList";
 
 export const HomeHeaderTemplate: React.FC = () => {
   return (
@@ -21,13 +19,7 @@ export const HomeHeaderTemplate: React.FC = () => {
         solutions using React and TypeScript.
       </h1>
 
-      <ScrollWrapper>
-        <div className={styles.skillsContainer}>
-          {skills.map((skill, idx) => (
-            <Skill key={idx} {...{ skill, idx }} />
-          ))}
-        </div>
-      </ScrollWrapper>
+      <SkillsList />
     </section>
   );
 };

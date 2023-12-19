@@ -1,5 +1,34 @@
 import { TSkill } from "../components/skill/Skill";
 
+export type TSkillLabel =
+  | "TypeScript"
+  | "JavaScript"
+  | "React"
+  | "React Query"
+  | "React Spring"
+  | "React Form"
+  | "Axios"
+  | "PHP"
+  | "CSS"
+  | "HTML"
+  | "Git"
+  | "GitHub Workflows"
+  | "REST APIs"
+  | "Sketch"
+  | "Figma"
+  | "Docker"
+  | "GatsbyJS"
+  | "WordPress"
+  | "Vue"
+  | "Agile"
+  | "JSON"
+  | "XML"
+  | "Photoshop"
+  | "NodeJS"
+  | "ElasticSearch"
+  | "MySQL"
+  | "MongoDB";
+
 export const skills: Array<TSkill> = [
   {
     iconSrc: "/images/skills/typescript.svg",
