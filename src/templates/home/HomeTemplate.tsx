@@ -7,13 +7,24 @@ import { RecommendationsTemplate } from "../templateParts/recommendations/Recomm
 import { OlderProjectsTemplate } from "../templateParts/olderProjects/OlderProjectsTemplate";
 import { Tooltip } from "react-tooltip";
 import { LinksTemplate } from "../templateParts/links/LinksTemplate";
+import { animated, config, useSpring } from "react-spring";
 
 export const HomeTemplate: React.FC = () => {
+  const bounceUpSpring = {
+    from: { opacity: 0, transform: "translate3d(0, 20px, 0)" },
+    to: { opacity: 1, transform: "translate3d(0, 0, 0)" },
+    config: config.wobbly,
+  };
+
   return (
     <Container layoutClassName={styles.container}>
-      <HomeHeaderTemplate />
+      <animated.div style={useSpring(bounceUpSpring)}>
+        <HomeHeaderTemplate />
+      </animated.div>
 
-      <RecentProjectsGridTemplate />
+      <animated.div style={useSpring({ ...bounceUpSpring, delay: 500 })}>
+        <RecentProjectsGridTemplate />
+      </animated.div>
 
       <RecommendationsTemplate />
 

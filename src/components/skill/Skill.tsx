@@ -17,8 +17,8 @@ interface SkillProps {
 
 export const Skill: React.FC<SkillProps> = ({ skill: { iconSrc, label }, idx, layoutClassName }) => {
   const bounceInSpring = useSpring({
-    from: { opacity: 0, transform: "scale(1.2)" },
-    to: { opacity: 1, transform: "scale(1.0" },
+    from: { opacity: 0, transform: "scale(0.9)" },
+    to: { opacity: 1, transform: "scale(1)" },
     config: config.wobbly,
     delay: idx * 50,
   });
