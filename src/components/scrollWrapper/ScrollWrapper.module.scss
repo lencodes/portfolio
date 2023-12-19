@@ -16,27 +16,18 @@
 }
 
 .navigationContainer {
-  display: flex;
-  margin-block-start: var(--size-sm);
+  overflow: hidden;
+  position: relative;
+  padding: var(--size-xs);
+  border-radius: var(--size-sm);
+  margin-block-start: var(--size-md);
+  background-color: var(--color-white-transparent);
 
-  button {
-    all: unset;
-    display: flex;
-    align-items: center;
-    gap: var(--size-sm);
-
-    svg {
-      height: var(--icon-size);
-    }
-
-    &:hover {
-      cursor: pointer;
-      user-select: none;
-      text-decoration: underline;
-    }
-
-    &.right {
-      margin-inline-start: auto;
-    }
+  .progressBar {
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    background: var(--color-progress-bar-background);
   }
 }
