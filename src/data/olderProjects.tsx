@@ -7,22 +7,20 @@ export const olderProjects: TProject[] = [
     subtitle: "De Buitenboordmotor, Remote",
     logoSrc: "/images/projects/buitenboordmotor/logo-buitenboordmotor.svg",
     cardImageSrc: "/images/projects/buitenboordmotor/card-image-buitenboordmotor.png",
-    duration: "24 months",
+    duration: "5 months",
     location: "Remote",
-    years: "2022 — 2023",
+    years: "2020 — 2021",
     details: {
       title: (
         <>
-          In collaboration with Conduction, I've worked on{" "}
-          <strong>numerous React and TypeScript web applications</strong>.
+          In collaboration with <strong>De Buitenboordmotor</strong> and <strong>Zyvo</strong>, we've realised a{" "}
+          <strong>Laravel gamification platform</strong>.
         </>
       ),
       headerImageSrc: "/images/projects/buitenboordmotor/header-image-buitenboordmotor.jpg",
       skills: [
-        "TypeScript",
-        "React",
-        "React Query",
-        "React Form",
+        "Laravel",
+        "JavaScript",
         "Axios",
         "PHP",
         "CSS",
@@ -32,32 +30,30 @@ export const olderProjects: TProject[] = [
         "REST APIs",
         "Sketch",
         "Figma",
-        "Docker",
-        "GatsbyJS",
-        "WordPress",
-        "Vue",
         "Agile",
         "JSON",
-        "ElasticSearch",
+        "XML",
+        "Photoshop",
+        "MongoDB",
       ],
       responsibilities: [
-        <>Lead frontend developer in a multidisciplinair team</>,
+        <>Full Stack developer in a multidisciplinair team</>,
         <>
-          React (function components, custom hooks, react-query and more), Typescript, HTML5, CSS Modules, REST API’s
-          and much more
+          Building a <strong>gamification platform</strong> using Laravel, to retrain professionals
         </>,
-        <>Coaching frontend developers and reviewing their code on a daily basis</>,
+        <>User interface- and experience design using Figma, Sketch and Photoshop</>,
         <>Code management using Git</>,
         <>CI/CD management using GitHub Workflows (automatic deployment, build tests and governance)</>,
-        <>
-          Implementing, building and managing (custom) component libraries and implementing NL Design System within
-          them.
-        </>,
-        <>
-          Municipalities (and clients) worked for and with: Rotterdam, Utrecht, Noordwijk, Tubbergen, Leiden, Epe,
-          Common Ground, Noaberkracht, and more
-        </>,
+        <>Daily stakholder meetings with managers and other developers</>,
       ],
+      outboundLink: {
+        label: (
+          <span>
+            Read more on the <strong>De Buitenboordmotor</strong> website
+          </span>
+        ),
+        href: "https://debuitenboordmotor.nl",
+      },
     },
   },
   {
@@ -66,22 +62,19 @@ export const olderProjects: TProject[] = [
     subtitle: "Anti Aging Labs, Remote",
     logoSrc: "/images/projects/anti-aging-labs/logo-anti-aging-labs.svg",
     cardImageSrc: "/images/projects/anti-aging-labs/card-image-anti-aging-labs.png",
-    duration: "24 months",
+    duration: "5 months",
     location: "Remote",
-    years: "2022 — 2023",
+    years: "2019",
     details: {
       title: (
         <>
-          In collaboration with Conduction, I've worked on{" "}
-          <strong>numerous React and TypeScript web applications</strong>.
+          <strong>WordPress WooCommerce webshop</strong> for anti ageing products
         </>
       ),
       headerImageSrc: "/images/projects/anti-aging-labs/header-image-anti-aging-labs.png",
       skills: [
-        "TypeScript",
-        "React",
-        "React Query",
-        "React Form",
+        "WordPress",
+        "JavaScript",
         "Axios",
         "PHP",
         "CSS",
@@ -91,91 +84,29 @@ export const olderProjects: TProject[] = [
         "REST APIs",
         "Sketch",
         "Figma",
-        "Docker",
-        "GatsbyJS",
-        "WordPress",
-        "Vue",
+
         "Agile",
         "JSON",
-        "ElasticSearch",
+        "XML",
+        "Photoshop",
+        "MySQL",
       ],
       responsibilities: [
-        <>Lead frontend developer in a multidisciplinair team</>,
-        <>
-          React (function components, custom hooks, react-query and more), Typescript, HTML5, CSS Modules, REST API’s
-          and much more
-        </>,
-        <>Coaching frontend developers and reviewing their code on a daily basis</>,
-        <>Code management using Git</>,
-        <>CI/CD management using GitHub Workflows (automatic deployment, build tests and governance)</>,
-        <>
-          Implementing, building and managing (custom) component libraries and implementing NL Design System within
-          them.
-        </>,
-        <>
-          Municipalities (and clients) worked for and with: Rotterdam, Utrecht, Noordwijk, Tubbergen, Leiden, Epe,
-          Common Ground, Noaberkracht, and more
-        </>,
+        <>Full Stack developer in a multidisciplinair team</>,
+        <>Building reusable WordPress components, including (micro) animations using CSS transitions.</>,
+        <>Code management and pull requets using Git(Hub)</>,
+        <>Deployments and database maintenance using cPanel</>,
+        <>Weekly stakeholder meetings with developers, managers and designers.</>,
+        <>Project management, using the SCRUM methodology via Trello.</>,
       ],
-    },
-  },
-  {
-    id: "0debfb8a-5d41-42a3-a390-86a1a6d3b873",
-    title: "Full Stack Developer",
-    subtitle: "Meubelslaaphuys, Delft",
-    logoSrc: "/images/projects/meubelslaaphuys/logo-meubelslaaphuys.svg",
-    cardImageSrc: "/images/projects/meubelslaaphuys/card-image-meubelslaaphuys.png",
-    duration: "24 months",
-    location: "Remote",
-    years: "2022 — 2023",
-    details: {
-      title: (
-        <>
-          In collaboration with Conduction, I've worked on{" "}
-          <strong>numerous React and TypeScript web applications</strong>.
-        </>
-      ),
-      headerImageSrc: "/images/projects/meubelslaaphuys/header-image-meubelslaaphuys.png",
-      skills: [
-        "TypeScript",
-        "React",
-        "React Query",
-        "React Form",
-        "Axios",
-        "PHP",
-        "CSS",
-        "HTML",
-        "Git",
-        "GitHub Workflows",
-        "REST APIs",
-        "Sketch",
-        "Figma",
-        "Docker",
-        "GatsbyJS",
-        "WordPress",
-        "Vue",
-        "Agile",
-        "JSON",
-        "ElasticSearch",
-      ],
-      responsibilities: [
-        <>Lead frontend developer in a multidisciplinair team</>,
-        <>
-          React (function components, custom hooks, react-query and more), Typescript, HTML5, CSS Modules, REST API’s
-          and much more
-        </>,
-        <>Coaching frontend developers and reviewing their code on a daily basis</>,
-        <>Code management using Git</>,
-        <>CI/CD management using GitHub Workflows (automatic deployment, build tests and governance)</>,
-        <>
-          Implementing, building and managing (custom) component libraries and implementing NL Design System within
-          them.
-        </>,
-        <>
-          Municipalities (and clients) worked for and with: Rotterdam, Utrecht, Noordwijk, Tubbergen, Leiden, Epe,
-          Common Ground, Noaberkracht, and more
-        </>,
-      ],
+      outboundLink: {
+        label: (
+          <span>
+            This project is <strong>available live</strong>
+          </span>
+        ),
+        href: "https://anti-aging-labs.nl",
+      },
     },
   },
   {
@@ -184,22 +115,19 @@ export const olderProjects: TProject[] = [
     subtitle: "We Will Drive, Remote",
     logoSrc: "/images/projects/we-will-drive/logo-we-will-drive.svg",
     cardImageSrc: "/images/projects/we-will-drive/card-image-we-will-drive.png",
-    duration: "24 months",
+    duration: "4 months",
     location: "Remote",
-    years: "2022 — 2023",
+    years: "2020",
     details: {
       title: (
         <>
-          In collaboration with Conduction, I've worked on{" "}
-          <strong>numerous React and TypeScript web applications</strong>.
+          A <strong>WordPress web application</strong>, focussing on chauffeur and driving services
         </>
       ),
       headerImageSrc: "/images/projects/we-will-drive/header-image-we-will-drive.png",
       skills: [
-        "TypeScript",
-        "React",
-        "React Query",
-        "React Form",
+        "WordPress",
+        "JavaScript",
         "Axios",
         "PHP",
         "CSS",
@@ -209,32 +137,82 @@ export const olderProjects: TProject[] = [
         "REST APIs",
         "Sketch",
         "Figma",
-        "Docker",
-        "GatsbyJS",
-        "WordPress",
-        "Vue",
+
         "Agile",
         "JSON",
-        "ElasticSearch",
+        "XML",
+        "Photoshop",
+        "MySQL",
       ],
       responsibilities: [
-        <>Lead frontend developer in a multidisciplinair team</>,
-        <>
-          React (function components, custom hooks, react-query and more), Typescript, HTML5, CSS Modules, REST API’s
-          and much more
-        </>,
-        <>Coaching frontend developers and reviewing their code on a daily basis</>,
-        <>Code management using Git</>,
-        <>CI/CD management using GitHub Workflows (automatic deployment, build tests and governance)</>,
-        <>
-          Implementing, building and managing (custom) component libraries and implementing NL Design System within
-          them.
-        </>,
-        <>
-          Municipalities (and clients) worked for and with: Rotterdam, Utrecht, Noordwijk, Tubbergen, Leiden, Epe,
-          Common Ground, Noaberkracht, and more
-        </>,
+        <>Full Stack developer in a multidisciplinair team</>,
+        <>Building reusable WordPress components, including (micro) animations using CSS transitions.</>,
+        <>Code management and pull requets using Git(Hub)</>,
+        <>Deployments and database maintenance using cPanel</>,
+        <>Weekly stakeholder meetings with developers, managers and designers.</>,
+        <>Project management, using the SCRUM methodology via Trello.</>,
       ],
+      outboundLink: {
+        label: (
+          <span>
+            This project is <strong>available live</strong>
+          </span>
+        ),
+        href: "https://wewilldrive.nl",
+      },
+    },
+  },
+  {
+    id: "0debfb8a-5d41-42a3-a390-86a1a6d3b873",
+    title: "Full Stack Developer",
+    subtitle: "Meubelslaaphuys, Delft",
+    logoSrc: "/images/projects/meubelslaaphuys/logo-meubelslaaphuys.svg",
+    cardImageSrc: "/images/projects/meubelslaaphuys/card-image-meubelslaaphuys.png",
+    duration: "5 months",
+    location: "Delft",
+    years: "2019",
+    details: {
+      title: (
+        <>
+          <strong>WordPress WooCommerce webshop</strong> for beautiful furniture, located in Delft
+        </>
+      ),
+      headerImageSrc: "/images/projects/meubelslaaphuys/header-image-meubelslaaphuys.png",
+      skills: [
+        "WordPress",
+        "JavaScript",
+        "Axios",
+        "PHP",
+        "CSS",
+        "HTML",
+        "Git",
+        "GitHub Workflows",
+        "REST APIs",
+        "Sketch",
+        "Figma",
+
+        "Agile",
+        "JSON",
+        "XML",
+        "Photoshop",
+        "MySQL",
+      ],
+      responsibilities: [
+        <>Full Stack developer in a multidisciplinair team</>,
+        <>Building reusable WordPress components, including (micro) animations using CSS transitions.</>,
+        <>Code management and pull requets using Git(Hub)</>,
+        <>Deployments and database maintenance using cPanel</>,
+        <>Weekly stakeholder meetings with developers, managers and designers.</>,
+        <>Project management, using the SCRUM methodology via Trello.</>,
+      ],
+      outboundLink: {
+        label: (
+          <span>
+            This project is <strong>available live</strong>
+          </span>
+        ),
+        href: "https://meubelslaaphuys.nl",
+      },
     },
   },
   {
@@ -243,22 +221,19 @@ export const olderProjects: TProject[] = [
     subtitle: "Citymar Consultancy, Rotterdam",
     logoSrc: "/images/projects/citymar/logo-citymar.svg",
     cardImageSrc: "/images/projects/citymar/card-image-citymar.png",
-    duration: "24 months",
-    location: "Remote",
-    years: "2022 — 2023",
+    duration: "4 months",
+    location: "Rotterdam",
+    years: "2018",
     details: {
       title: (
         <>
-          In collaboration with Conduction, I've worked on{" "}
-          <strong>numerous React and TypeScript web applications</strong>.
+          A <strong>WordPress web application</strong>, focussing on city marketing and consultancy
         </>
       ),
       headerImageSrc: "/images/projects/citymar/header-image-citymar.png",
       skills: [
-        "TypeScript",
-        "React",
-        "React Query",
-        "React Form",
+        "WordPress",
+        "JavaScript",
         "Axios",
         "PHP",
         "CSS",
@@ -268,32 +243,29 @@ export const olderProjects: TProject[] = [
         "REST APIs",
         "Sketch",
         "Figma",
-        "Docker",
-        "GatsbyJS",
-        "WordPress",
-        "Vue",
+
         "Agile",
         "JSON",
-        "ElasticSearch",
+        "XML",
+        "Photoshop",
+        "MySQL",
       ],
       responsibilities: [
-        <>Lead frontend developer in a multidisciplinair team</>,
-        <>
-          React (function components, custom hooks, react-query and more), Typescript, HTML5, CSS Modules, REST API’s
-          and much more
-        </>,
-        <>Coaching frontend developers and reviewing their code on a daily basis</>,
-        <>Code management using Git</>,
-        <>CI/CD management using GitHub Workflows (automatic deployment, build tests and governance)</>,
-        <>
-          Implementing, building and managing (custom) component libraries and implementing NL Design System within
-          them.
-        </>,
-        <>
-          Municipalities (and clients) worked for and with: Rotterdam, Utrecht, Noordwijk, Tubbergen, Leiden, Epe,
-          Common Ground, Noaberkracht, and more
-        </>,
+        <>Full Stack developer in a multidisciplinair team</>,
+        <>Building reusable WordPress components, including (micro) animations using CSS transitions.</>,
+        <>Code management and pull requets using Git(Hub)</>,
+        <>Deployments and database maintenance using cPanel</>,
+        <>Weekly stakeholder meetings with developers, managers and designers.</>,
+        <>Project management, using the SCRUM methodology via Trello.</>,
       ],
+      outboundLink: {
+        label: (
+          <span>
+            This project is <strong>available live</strong>
+          </span>
+        ),
+        href: "https://citymar.nl",
+      },
     },
   },
   {
@@ -302,9 +274,9 @@ export const olderProjects: TProject[] = [
     subtitle: "Generation Games, Rotterdam",
     logoSrc: "/images/projects/generation-games/logo-generation-games.svg",
     cardImageSrc: "/images/projects/generation-games/card-image-generation-games.png",
-    duration: "24 months",
-    location: "Remote",
-    years: "2022 — 2023",
+    duration: "6 months",
+    location: "Rotterdam",
+    years: "2017",
     details: {
       title: (
         <>
@@ -314,10 +286,8 @@ export const olderProjects: TProject[] = [
       ),
       headerImageSrc: "/images/projects/generation-games/header-image-generation-games.png",
       skills: [
-        "TypeScript",
-        "React",
-        "React Query",
-        "React Form",
+        "WordPress",
+        "JavaScript",
         "Axios",
         "PHP",
         "CSS",
@@ -327,32 +297,29 @@ export const olderProjects: TProject[] = [
         "REST APIs",
         "Sketch",
         "Figma",
-        "Docker",
-        "GatsbyJS",
-        "WordPress",
-        "Vue",
+
         "Agile",
         "JSON",
-        "ElasticSearch",
+        "XML",
+        "Photoshop",
+        "MySQL",
       ],
       responsibilities: [
-        <>Lead frontend developer in a multidisciplinair team</>,
-        <>
-          React (function components, custom hooks, react-query and more), Typescript, HTML5, CSS Modules, REST API’s
-          and much more
-        </>,
-        <>Coaching frontend developers and reviewing their code on a daily basis</>,
-        <>Code management using Git</>,
-        <>CI/CD management using GitHub Workflows (automatic deployment, build tests and governance)</>,
-        <>
-          Implementing, building and managing (custom) component libraries and implementing NL Design System within
-          them.
-        </>,
-        <>
-          Municipalities (and clients) worked for and with: Rotterdam, Utrecht, Noordwijk, Tubbergen, Leiden, Epe,
-          Common Ground, Noaberkracht, and more
-        </>,
+        <>Full Stack developer in a multidisciplinair team</>,
+        <>Building reusable WordPress components, including (micro) animations using CSS transitions.</>,
+        <>Code management and pull requets using Git(Hub)</>,
+        <>Deployments and database maintenance using cPanel</>,
+        <>Weekly stakeholder meetings with developers, managers and designers.</>,
+        <>Project management, using the SCRUM methodology via Trello.</>,
       ],
+      outboundLink: {
+        label: (
+          <span>
+            This project is <strong>available live</strong>
+          </span>
+        ),
+        href: "https://generationgames.com",
+      },
     },
   },
 ];

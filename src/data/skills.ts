@@ -27,7 +27,8 @@ export type TSkillLabel =
   | "NodeJS"
   | "ElasticSearch"
   | "MySQL"
-  | "MongoDB";
+  | "MongoDB"
+  | "Laravel";
 
 export const skills: Array<TSkill> = [
   {
@@ -168,5 +169,11 @@ export const skills: Array<TSkill> = [
     iconSrc: "/images/skills/mongodb.svg",
     label: "MongoDB",
     tooltipContent: "Embracing flexibility in NoSQL database solutions for dynamic data handling.",
+  },
+  {
+    iconSrc: "/images/skills/laravel.svg",
+    label: "Laravel",
+    tooltipContent:
+      "Leveraging the elegant and expressive PHP framework to streamline web application development, emphasizing clean code, modularity, and efficient database management.",
   },
 ];

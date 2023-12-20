@@ -108,11 +108,14 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
           style={{ ...bounceInFloatingTopBar, pointerEvents: topBarIsInView ? "none" : "all" }}
         >
           <FontAwesomeIcon onClick={onClose} icon={faCircleXmark} />
-          <FontAwesomeIcon
-            onClick={() => window.open(project.details.outboundLink?.href)}
-            className={styles.outbound}
-            icon={faCircleArrowUp}
-          />
+
+          {project.details.outboundLink && (
+            <FontAwesomeIcon
+              onClick={() => window.open(project.details.outboundLink?.href)}
+              className={styles.outbound}
+              icon={faCircleArrowUp}
+            />
+          )}
         </animated.div>
 
         <animated.section

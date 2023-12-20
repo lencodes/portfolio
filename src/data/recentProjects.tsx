@@ -136,7 +136,7 @@ export const recentProjects: TProject[] = [
     cardImageSrc: "/images/projects/level-works/card-image-level-works.png",
     duration: "3 months",
     location: "Remote",
-    years: "2022",
+    years: "2021",
     details: {
       title: (
         <>
@@ -189,7 +189,7 @@ export const recentProjects: TProject[] = [
     cardImageSrc: "/images/projects/koopwebsite/card-image-koopwebsite.png",
     duration: "3 months",
     location: "Remote",
-    years: "2022",
+    years: "2020",
     details: {
       title: (
         <>
