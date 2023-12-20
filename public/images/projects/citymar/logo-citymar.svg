@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage--hover" transform="translate(-910.000000, -2259.000000)">
+            <g id="older-projects" transform="translate(490.000000, 1931.000000)">
+                <g id="anti-aging-labs" transform="translate(320.000000, 298.000000)">
+                    <g id="logo" transform="translate(100.000000, 30.000000)">
+                        <circle id="Oval" fill="#FFFFFF" cx="50" cy="50" r="50"></circle>
+                        <text id="Citymar" font-family="AvenirNext-Bold, Avenir Next" font-size="20" font-weight="bold" fill="#AD1E2A">
+                            <tspan x="11" y="56">Citymar</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
