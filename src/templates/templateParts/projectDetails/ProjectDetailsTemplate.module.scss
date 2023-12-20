@@ -1,3 +1,5 @@
+@import "/src/styling/variables.module.scss";
+
 .containerWrapper {
   top: 0;
   left: 0;
@@ -30,6 +32,10 @@
     display: none;
   }
   scrollbar-width: none;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding-block: var(--size-lg);
+  }
 }
 
 @keyframes animateBackground {
@@ -70,6 +76,15 @@
       strong {
         color: var(--color-success);
       }
+
+      @media screen and (max-width: $breakpoint-sm) {
+        gap: var(--size-xs);
+        font-size: var(--font-size-xs);
+
+        svg {
+          height: calc(var(--icon-size) * 0.8);
+        }
+      }
     }
   }
 
@@ -78,7 +93,8 @@
     left: 0;
     position: fixed;
     left: auto;
-    width: calc(var(--container-size-lg) - (var(--size-md) * 2));
+    width: calc(100% - var(--size-md) * 2);
+    max-width: calc(var(--container-size-lg) - (var(--size-md) * 2));
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -148,6 +164,10 @@
       display: flex;
       gap: var(--size-lg);
       flex-direction: column;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      grid-template-columns: 1fr;
     }
   }
 

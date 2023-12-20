@@ -1,3 +1,5 @@
+@import "/src/styling/variables.module.scss";
+
 .container {
   & > *:not(:last-child) {
     margin-block-end: var(--size-lg);
@@ -9,6 +11,10 @@
 
     & > * {
       flex: 1;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      flex-wrap: wrap;
     }
   }
 }

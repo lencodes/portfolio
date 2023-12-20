@@ -93,7 +93,7 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
           style={useSpring({ ...bounceUpSpring, onRest: () => setTopBarAnimationCompleted(true), delay: 2000 })}
         >
           <button onClick={onClose}>
-            <FontAwesomeIcon icon={faSquareXmark} /> Close window
+            <FontAwesomeIcon icon={faSquareXmark} /> <span className={styles.closeLabel}>Close window</span>
           </button>
 
           {project.details.outboundLink && (

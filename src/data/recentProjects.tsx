@@ -174,7 +174,7 @@ export const recentProjects: TProject[] = [
       outboundLink: {
         label: (
           <span>
-            Read more on the <strong>Level.works</strong> website
+            Check out <strong>Level.works</strong>
           </span>
         ),
         href: "https://level.works",

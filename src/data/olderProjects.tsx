@@ -49,7 +49,7 @@ export const olderProjects: TProject[] = [
       outboundLink: {
         label: (
           <span>
-            Read more on the <strong>De Buitenboordmotor</strong> website
+            Check out <strong>De Buitenboordmotor</strong>
           </span>
         ),
         href: "https://debuitenboordmotor.nl",
