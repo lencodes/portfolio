@@ -62,6 +62,14 @@ export const recentProjects: TProject[] = [
           Common Ground, Noaberkracht, and more
         </>,
       ],
+      outboundLink: {
+        label: (
+          <span>
+            Conduction's work is <strong>open source</strong>
+          </span>
+        ),
+        href: "https://github.com/ConductionNL",
+      },
     },
   },
   {
@@ -110,6 +118,14 @@ export const recentProjects: TProject[] = [
         <>Creating ready-to-use WordPress (ACF) components, with a React frontend</>,
         <>Code management and pull requests using GitHub</>,
       ],
+      outboundLink: {
+        label: (
+          <span>
+            This project is <strong>available live</strong>
+          </span>
+        ),
+        href: "https://careers.bol.com",
+      },
     },
   },
   {
@@ -155,6 +171,14 @@ export const recentProjects: TProject[] = [
         </>,
         <>Code management and pull requests using GitHub</>,
       ],
+      outboundLink: {
+        label: (
+          <span>
+            Read more on the <strong>Level.works</strong> website
+          </span>
+        ),
+        href: "https://level.works",
+      },
     },
   },
   {
@@ -202,6 +226,14 @@ export const recentProjects: TProject[] = [
         </>,
         <>CI/CD management using GitHub Workflows (automatic deployment, build tests and governance)</>,
       ],
+      outboundLink: {
+        label: (
+          <span>
+            This project is <strong>available live</strong>
+          </span>
+        ),
+        href: "https://koopwebsite.nl",
+      },
     },
   },
 ];

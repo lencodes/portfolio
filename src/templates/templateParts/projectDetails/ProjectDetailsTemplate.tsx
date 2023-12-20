@@ -29,6 +29,10 @@ export type TProject = {
     skills: Array<TSkillLabel>;
     responsibilities: Array<JSX.Element>;
     recommendation?: TRecommendation;
+    outboundLink?: {
+      label: JSX.Element;
+      href: string;
+    };
   };
 };
 
@@ -73,9 +77,12 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
           <button onClick={onClose}>
             <FontAwesomeIcon icon={faSquareXmark} /> Close window
           </button>
-          <button>
-            This project is available live <FontAwesomeIcon icon={faSquareArrowUpRight} />
-          </button>
+
+          {project.details.outboundLink && (
+            <button className={styles.outboundLink} onClick={() => window.open(project.details.outboundLink?.href)}>
+              {project.details.outboundLink.label} <FontAwesomeIcon icon={faSquareArrowUpRight} />
+            </button>
+          )}
         </animated.div>
 
         <animated.section

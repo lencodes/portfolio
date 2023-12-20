@@ -66,6 +66,10 @@
         user-select: none;
         text-decoration: underline;
       }
+
+      strong {
+        color: var(--color-success);
+      }
     }
   }
 
