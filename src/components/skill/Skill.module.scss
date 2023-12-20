@@ -3,7 +3,6 @@
   gap: var(--size-sm);
   flex-direction: column;
   align-items: center;
-  filter: grayscale(100%);
 
   .imageContainer {
     display: flex;
@@ -24,9 +23,5 @@
   .label {
     text-align: center;
     font-size: var(--font-size-xs);
-  }
-
-  &:hover {
-    filter: grayscale(0);
   }
 }

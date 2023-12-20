@@ -1,3 +1,5 @@
+@import "/src/styling/variables.module.scss";
+
 .container {
   overflow: hidden;
   filter: grayscale(100%);
@@ -8,6 +10,11 @@
   padding-inline: var(--size-lg);
   padding-block: var(--size-lg);
   user-select: none;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    // disable grayscale on mobile due to not having a hover state
+    filter: grayscale(0);
+  }
 
   * {
     transition: all 200ms ease-in-out;
