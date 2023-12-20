@@ -15,26 +15,29 @@ export const ScrollWrapper: React.FC<ScrollWrapperProps> = ({ children, hasTilti
     width: "0%",
   }));
 
-  const handleScroll = () => {
-    if (!containerRef.current) return;
-
-    const container = containerRef.current;
-    const newWidth = ((container.scrollLeft + container.clientWidth) / container.scrollWidth) * 100;
-
-    setSpringProps({ width: `${newWidth}%` });
-  };
-
   React.useEffect(() => {
+    const container = containerRef.current;
+
+    if (!container) return;
+
+    const handleScroll = () => {
+      const newWidth = ((container.scrollLeft + container.clientWidth) / container.scrollWidth) * 100;
+
+      setSpringProps({ width: `${newWidth}%` });
+    };
+
     handleScroll();
-  }, []);
+
+    container.addEventListener("scroll", handleScroll);
+
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+    };
+  }, [setSpringProps]);
 
   return (
     <div>
-      <div
-        ref={containerRef}
-        onScroll={handleScroll}
-        className={clsx(styles.container, [hasTiltingChildren && styles.hasTiltingChildren])}
-      >
+      <div ref={containerRef} className={clsx(styles.container, [hasTiltingChildren && styles.hasTiltingChildren])}>
         {children}
       </div>
 

@@ -162,7 +162,7 @@ export const olderProjects: TProject[] = [
     },
   },
   {
-    id: "0debfb8a-5d41-42a3-a390-86a1a6d3b873",
+    id: "c52535cd-e7b6-4903-9f59-f290ea4084d7",
     title: "Full Stack Developer",
     subtitle: "Meubelslaaphuys, Delft",
     logoSrc: "/images/projects/meubelslaaphuys/logo-meubelslaaphuys.svg",
