@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./ProjectDetailsTemplate.module.scss";
-import { useSpring, animated, config } from "react-spring";
+import { useSpring, animated, config, useInView } from "react-spring";
 import { Container } from "../../../components/container/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendar,
+  faCircleArrowUp,
+  faCircleXmark,
   faClock,
   faLocationDot,
   faSquareArrowUpRight,
@@ -43,6 +45,9 @@ interface ProjectDetailsTemplateProps {
 }
 
 export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ onClose, mousePosition, project }) => {
+  const [topBarRef, topBarIsInView] = useInView();
+  const [topBarAnimationCompleted, setTopBarAnimationCompleted] = React.useState<boolean>(false);
+
   React.useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
       event.key === "Escape" && onClose();
@@ -66,6 +71,15 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
     config: config.wobbly,
   };
 
+  const bounceInFloatingTopBar = useSpring({
+    from: { opacity: 0, transform: "translateY(50px)" },
+    to: {
+      opacity: !topBarIsInView && topBarAnimationCompleted ? 1 : 0,
+      transform: !topBarIsInView && topBarAnimationCompleted ? "translateY(0px)" : "translateY(50px)",
+    },
+    config: config.wobbly,
+  });
+
   return (
     <div className={styles.containerWrapper}>
       <div
@@ -73,7 +87,11 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
         style={{ top: `${mousePosition.y - 50}px`, left: `${mousePosition.x - 50}px` }}
       />
       <Container layoutClassName={styles.container}>
-        <animated.div className={styles.topBar} style={useSpring({ ...bounceUpSpring, delay: 2000 })}>
+        <animated.div
+          ref={topBarRef}
+          className={styles.topBar}
+          style={useSpring({ ...bounceUpSpring, onRest: () => setTopBarAnimationCompleted(true), delay: 2000 })}
+        >
           <button onClick={onClose}>
             <FontAwesomeIcon icon={faSquareXmark} /> Close window
           </button>
@@ -83,6 +101,18 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
               {project.details.outboundLink.label} <FontAwesomeIcon icon={faSquareArrowUpRight} />
             </button>
           )}
+        </animated.div>
+
+        <animated.div
+          className={styles.floatingTopBar}
+          style={{ ...bounceInFloatingTopBar, pointerEvents: topBarIsInView ? "none" : "all" }}
+        >
+          <FontAwesomeIcon onClick={onClose} icon={faCircleXmark} />
+          <FontAwesomeIcon
+            onClick={() => window.open(project.details.outboundLink?.href)}
+            className={styles.outbound}
+            icon={faCircleArrowUp}
+          />
         </animated.div>
 
         <animated.section

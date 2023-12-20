@@ -73,6 +73,36 @@
     }
   }
 
+  .floatingTopBar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    left: auto;
+    width: calc(var(--container-size-lg) - (var(--size-md) * 2));
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    & > * {
+      padding: var(--size-md);
+      font-size: var(--font-size-2xl);
+      transition: all 200ms ease-out;
+
+      &.outbound {
+        path {
+          color: var(--color-success);
+        }
+
+        transform: rotate(45deg);
+      }
+
+      &:hover {
+        transform: rotate(90deg);
+        cursor: pointer;
+      }
+    }
+  }
+
   .headerContainer {
     display: flex;
     align-items: center;
