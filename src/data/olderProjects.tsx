@@ -74,9 +74,9 @@ export const olderProjects: TProject[] = [
       headerImageSrc: "/images/projects/anti-aging-labs/header-image-anti-aging-labs.png",
       skills: [
         "WordPress",
+        "PHP",
         "JavaScript",
         "Axios",
-        "PHP",
         "CSS",
         "HTML",
         "Git",
@@ -84,7 +84,6 @@ export const olderProjects: TProject[] = [
         "REST APIs",
         "Sketch",
         "Figma",
-
         "Agile",
         "JSON",
         "XML",
@@ -127,9 +126,9 @@ export const olderProjects: TProject[] = [
       headerImageSrc: "/images/projects/we-will-drive/header-image-we-will-drive.png",
       skills: [
         "WordPress",
+        "PHP",
         "JavaScript",
         "Axios",
-        "PHP",
         "CSS",
         "HTML",
         "Git",
@@ -180,9 +179,9 @@ export const olderProjects: TProject[] = [
       headerImageSrc: "/images/projects/meubelslaaphuys/header-image-meubelslaaphuys.png",
       skills: [
         "WordPress",
+        "PHP",
         "JavaScript",
         "Axios",
-        "PHP",
         "CSS",
         "HTML",
         "Git",
@@ -190,7 +189,6 @@ export const olderProjects: TProject[] = [
         "REST APIs",
         "Sketch",
         "Figma",
-
         "Agile",
         "JSON",
         "XML",
@@ -233,9 +231,9 @@ export const olderProjects: TProject[] = [
       headerImageSrc: "/images/projects/citymar/header-image-citymar.png",
       skills: [
         "WordPress",
+        "PHP",
         "JavaScript",
         "Axios",
-        "PHP",
         "CSS",
         "HTML",
         "Git",
@@ -243,7 +241,6 @@ export const olderProjects: TProject[] = [
         "REST APIs",
         "Sketch",
         "Figma",
-
         "Agile",
         "JSON",
         "XML",
@@ -286,9 +283,9 @@ export const olderProjects: TProject[] = [
       headerImageSrc: "/images/projects/generation-games/header-image-generation-games.png",
       skills: [
         "WordPress",
+        "PHP",
         "JavaScript",
         "Axios",
-        "PHP",
         "CSS",
         "HTML",
         "Git",
@@ -296,7 +293,6 @@ export const olderProjects: TProject[] = [
         "REST APIs",
         "Sketch",
         "Figma",
-
         "Agile",
         "JSON",
         "XML",
