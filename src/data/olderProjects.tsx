@@ -221,7 +221,7 @@ export const olderProjects: TProject[] = [
     subtitle: "Citymar Consultancy, Rotterdam",
     logoSrc: "/images/projects/citymar/logo-citymar.svg",
     cardImageSrc: "/images/projects/citymar/card-image-citymar.png",
-    duration: "4 months",
+    duration: "3 months",
     location: "Rotterdam",
     years: "2018",
     details: {
@@ -280,8 +280,7 @@ export const olderProjects: TProject[] = [
     details: {
       title: (
         <>
-          In collaboration with Conduction, I've worked on{" "}
-          <strong>numerous React and TypeScript web applications</strong>.
+          A <strong>WordPress web application</strong>, focussing on bringing generations together through sport
         </>
       ),
       headerImageSrc: "/images/projects/generation-games/header-image-generation-games.png",
@@ -306,6 +305,7 @@ export const olderProjects: TProject[] = [
       ],
       responsibilities: [
         <>Full Stack developer in a multidisciplinair team</>,
+        <>Building multi lingual functionality, including arabic and chinese language sets</>,
         <>Building reusable WordPress components, including (micro) animations using CSS transitions.</>,
         <>Code management and pull requets using Git(Hub)</>,
         <>Deployments and database maintenance using cPanel</>,
