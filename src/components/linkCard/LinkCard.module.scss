@@ -1,13 +1,9 @@
+.wrapper:hover {
+  cursor: pointer;
+}
+
 .container {
   position: relative;
-
-  &:hover {
-    cursor: pointer;
-
-    .icon {
-      height: calc(var(--icon-size) * 1.5);
-    }
-  }
 
   .header {
     display: flex;
