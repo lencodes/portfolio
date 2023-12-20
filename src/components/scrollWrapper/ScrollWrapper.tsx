@@ -11,7 +11,7 @@ interface ScrollWrapperProps {
 export const ScrollWrapper: React.FC<ScrollWrapperProps> = ({ children, hasTiltingChildren }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
 
-  const [springProps, setSpringProps] = useSpring(() => ({
+  const [progressBarSpring, api] = useSpring(() => ({
     width: "0%",
   }));
 
@@ -23,7 +23,9 @@ export const ScrollWrapper: React.FC<ScrollWrapperProps> = ({ children, hasTilti
     const handleScroll = () => {
       const newWidth = ((container.scrollLeft + container.clientWidth) / container.scrollWidth) * 100;
 
-      setSpringProps({ width: `${newWidth}%` });
+      api.start({
+        to: { width: `${newWidth}%` },
+      });
     };
 
     handleScroll();
@@ -33,7 +35,7 @@ export const ScrollWrapper: React.FC<ScrollWrapperProps> = ({ children, hasTilti
     return () => {
       container.removeEventListener("scroll", handleScroll);
     };
-  }, [setSpringProps]);
+  }, [api]);
 
   return (
     <div>
@@ -42,7 +44,7 @@ export const ScrollWrapper: React.FC<ScrollWrapperProps> = ({ children, hasTilti
       </div>
 
       <div className={styles.navigationContainer}>
-        <animated.div className={styles.progressBar} style={{ width: springProps.width }} />
+        <animated.div className={styles.progressBar} style={progressBarSpring} />
       </div>
     </div>
   );
