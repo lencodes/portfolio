@@ -17,7 +17,9 @@ export const SkillsList: React.FC<SkillsListProps> = ({ skills }) => {
       return;
     }
 
-    setListedSkills(allSkills.filter((skill) => skills.includes(skill.label as TSkillLabel)));
+    const orderedSkills = skills.map((skillLabel) => allSkills.find((skill) => skill.label === skillLabel));
+
+    setListedSkills(orderedSkills.filter((skill) => skill !== undefined) as TSkill[]);
   }, [skills]);
 
   if (!listedSkills.length) return <></>;
