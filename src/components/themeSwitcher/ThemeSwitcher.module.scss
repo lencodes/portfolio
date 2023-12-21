@@ -5,15 +5,27 @@
   user-select: none;
   margin: var(--size-md) auto 0;
 
+  top: var(--size-md);
+  border-radius: var(--size-sm);
+  padding: var(--size-sm);
+
   &:hover {
     cursor: pointer;
   }
 
-  span.light path {
-    fill: purple;
+  &.light {
+    span path {
+      fill: purple;
+    }
+
+    background-color: var(--color-page-background);
   }
 
-  span.dark path {
-    fill: yellow;
+  &.dark {
+    span path {
+      fill: yellow;
+    }
   }
+
+  background-color: var(--color-page-background);
 }
