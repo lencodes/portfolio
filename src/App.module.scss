@@ -2,11 +2,12 @@
   min-width: 100vw;
   min-height: 100vh;
 
-  background-image: url("./../public/images/global/background.jpg");
+  background-image: var(--background-image);
   background-position: center center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  animation: animateBackground 5s infinite ease-in-out;
+  animation: animateBackground 5s ease-in-out forwards;
 }
 
 .content {
@@ -15,14 +16,4 @@
   height: 100vh;
   overflow-y: auto;
   position: absolute;
-}
-
-@keyframes animateBackground {
-  0%,
-  100% {
-    background-size: 100% 100%;
-  }
-  50% {
-    background-size: 110% 110%;
-  }
 }

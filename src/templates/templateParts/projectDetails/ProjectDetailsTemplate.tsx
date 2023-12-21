@@ -80,7 +80,7 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
     from: { opacity: 0, transform: "translateY(50px)" },
     to: {
       opacity: !topBarIsInView && topBarAnimationCompleted ? 1 : 0,
-      transform: !topBarIsInView && topBarAnimationCompleted ? "translateY(0px)" : "translateY(50px)",
+      transform: !topBarIsInView && topBarAnimationCompleted ? "translateY(0px)" : "translateY(20px)",
     },
     config: config.wobbly,
   });

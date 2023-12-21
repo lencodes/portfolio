@@ -2,7 +2,6 @@
 
 .container {
   overflow: hidden;
-  filter: grayscale(100%);
   background-size: cover;
   background-position: center center;
   border: 1px var(--color-card-border) solid;
@@ -11,28 +10,19 @@
   padding-block: var(--size-lg);
   user-select: none;
 
-  @media screen and (max-width: $breakpoint-sm) {
-    // disable grayscale on mobile due to not having a hover state
-    filter: grayscale(0);
-  }
-
-  * {
-    transition: all 200ms ease-in-out;
-  }
-
   .content {
     text-align: center;
 
     .expandIcon {
       border-radius: var(--size-xs);
       padding: var(--size-sm);
-      background-color: var(--color-white);
+      background-color: var(--color-icon-background);
       position: absolute;
       top: var(--size-sm);
       right: var(--size-sm);
 
       path {
-        fill: var(--color-black);
+        fill: var(--color-icon);
       }
     }
 
@@ -46,6 +36,11 @@
       font-weight: 400;
       display: block;
       font-size: var(--font-size-md);
+    }
+
+    h3,
+    .subtitle {
+      color: var(--color-image-overlay-text);
     }
   }
 

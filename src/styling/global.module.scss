@@ -3,5 +3,9 @@
 @import url("./variables.module.scss");
 
 body {
-  background-color: var(--color-black);
+  background-color: var(--color-page-background);
+
+  & * {
+    transition: 200ms ease-out;
+  }
 }

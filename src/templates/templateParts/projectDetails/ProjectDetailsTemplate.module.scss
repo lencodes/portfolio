@@ -153,6 +153,10 @@
         gap: var(--size-xs);
       }
     }
+
+    * {
+      color: var(--color-image-overlay-text);
+    }
   }
 
   .content {
