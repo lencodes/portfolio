@@ -15,6 +15,7 @@ import {
 import { SkillsList } from "../../../components/skillsList/SkillsList";
 import { TSkillLabel } from "../../../data/skills";
 import { RecommendationCard, TRecommendation } from "../../../components/recommendationCard/RecommendationCard";
+import { logGoogleAnalyticsProjectView } from "../../../analytics/analytics";
 
 export type TProject = {
   id: string;
@@ -57,6 +58,10 @@ export const ProjectDetailsTemplate: React.FC<ProjectDetailsTemplateProps> = ({ 
 
     return () => window.removeEventListener("keydown", handleKeyPress);
   }, [onClose]);
+
+  React.useEffect(() => {
+    logGoogleAnalyticsProjectView(project.title);
+  }, [project.title]);
 
   const bounceInSpring = {
     delay: 500,
