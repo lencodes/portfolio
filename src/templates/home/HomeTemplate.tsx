@@ -22,7 +22,7 @@ export const HomeTemplate: React.FC = () => {
         <HomeHeaderTemplate />
       </animated.div>
 
-      <animated.div style={useSpring({ ...bounceUpSpring, delay: 750 })}>
+      <animated.div style={useSpring({ ...bounceUpSpring, delay: 1000 })}>
         <RecentProjectsGridTemplate />
       </animated.div>
 

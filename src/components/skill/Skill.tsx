@@ -21,7 +21,7 @@ export const Skill: React.FC<SkillProps> = ({ skill: { iconSrc, label, tooltipCo
     from: { opacity: 0, transform: "scale(0.9)" },
     to: { opacity: 1, transform: "scale(1)" },
     config: config.wobbly,
-    delay: idx * 75,
+    delay: idx * 65,
   });
 
   return (
