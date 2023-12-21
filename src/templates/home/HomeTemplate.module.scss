@@ -1,7 +1,7 @@
 @import "/src/styling/variables.module.scss";
 
 .container {
-  padding-block-start: var(--size-2xl);
+  padding-block-start: var(--size-xl);
 
   & > * {
     margin-block-end: var(--size-2xl);

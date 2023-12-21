@@ -1,0 +1,19 @@
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  margin: var(--size-md) auto 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  span.light path {
+    fill: purple;
+  }
+
+  span.dark path {
+    fill: yellow;
+  }
+}
