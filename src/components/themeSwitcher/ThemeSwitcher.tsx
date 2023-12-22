@@ -25,7 +25,8 @@ export const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({ currentTheme, hand
       onClick={handleSwitch}
     >
       <span>
-        Switch theme <FontAwesomeIcon icon={currentTheme === "light" ? faMoon : faSun} />
+        Switch to <strong>{currentTheme === "light" ? "dark" : "light"}</strong> theme{" "}
+        <FontAwesomeIcon icon={currentTheme === "light" ? faMoon : faSun} />
       </span>
     </animated.button>
   );
