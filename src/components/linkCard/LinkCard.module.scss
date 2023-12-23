@@ -1,0 +1,30 @@
+.wrapper:hover {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: var(--size-md);
+
+    .title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    > img {
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: var(--icon-size);
+  }
+}

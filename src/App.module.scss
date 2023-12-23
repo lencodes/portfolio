@@ -1,0 +1,19 @@
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  background-image: var(--background-image);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation: animateBackground 5s ease-in-out forwards;
+}
+
+.content {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  position: absolute;
+}

@@ -1,0 +1,16 @@
+.container {
+  border-radius: var(--size-sm);
+  background-color: var(--color-card-background);
+  border: 1px var(--color-card-border) solid;
+  width: fit-content;
+
+  &.size--md {
+    padding: var(--size-md);
+    border-radius: var(--size-sm);
+  }
+
+  &.size--sm {
+    padding: var(--size-sm);
+    border-radius: var(--size-xs);
+  }
+}

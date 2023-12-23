@@ -1,0 +1,20 @@
+@import "/src/styling/variables.module.scss";
+
+.container {
+  & > *:not(:last-child) {
+    margin-block-end: var(--size-lg);
+  }
+
+  .linksContainer {
+    display: flex;
+    gap: var(--size-md);
+
+    & > * {
+      flex: 1;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "/src/styling/variables.module.scss";
+
+.container {
+  & > *:not(:last-child) {
+    margin-block-end: var(--size-lg);
+  }
+
+  .recommendations {
+    display: flex;
+    gap: var(--size-md);
+    flex-wrap: nowrap;
+
+    & > * {
+      flex: 0 0 35%;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      & > * {
+        flex: 0 0 75%;
+      }
+    }
+  }
+}
