@@ -1,6 +1,7 @@
 @import "/src/styling/variables.module.scss";
 
 .container {
+  position: relative;
   overflow: hidden;
   background-size: cover;
   background-position: center center;
